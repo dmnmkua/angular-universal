@@ -162,10 +162,7 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "guessRoutes": false,
-            "routes": [
-              "/"
-            ]
+            "guessRoutes": false
           },
           "configurations": {
             "production": {
