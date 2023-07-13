@@ -25,24 +25,24 @@ export class SeoService {
       title: 'title',
       description: 'description',
       image: 'https://base64.ai/static/media-kit/base64.ai-logo-small.png',
-      slug: location.pathname,
+      slug: 'test',
       ...config
     }
 
-    this.meta.addTag({ name: 'description', content: config.description });
+    this.meta.updateTag({ name: 'description', content: config.description });
 
-    this.meta.addTag({ name: 'twitter:card', content: 'summary' });
-    this.meta.addTag({ name: 'twitter:site', content: '@Strats_gg' });
-    this.meta.addTag({ name: 'twitter:title', content: config.title });
-    this.meta.addTag({ name: 'twitter:description', content: config.description });
-    this.meta.addTag({ name: 'twitter:image', content: config.image });
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
+    this.meta.updateTag({ name: 'twitter:site', content: '@Strats_gg' });
+    this.meta.updateTag({ name: 'twitter:title', content: config.title });
+    this.meta.updateTag({ name: 'twitter:description', content: config.description });
+    this.meta.updateTag({ name: 'twitter:image', content: config.image });
 
-    this.meta.addTag({ property: 'og:type', content: 'website' });
-    this.meta.addTag({ property: 'og:site_name', content: 'Strats.gg' });
-    this.meta.addTag({ property: 'og:title', content: config.title });
-    this.meta.addTag({ property: 'og:description', content: config.description });
-    this.meta.addTag({ property: 'og:image', content: config.image });
-    this.meta.addTag({ property: 'og:url', content: `https://strats.gg${config.slug}` });
+    this.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Strats.gg' });
+    this.meta.updateTag({ property: 'og:title', content: config.title });
+    this.meta.updateTag({ property: 'og:description', content: config.description });
+    this.meta.updateTag({ property: 'og:image', content: config.image });
+    this.meta.updateTag({ property: 'og:url', content: `https://strats.gg${config.slug}` });
   }
 
   removeMetaTags() {
