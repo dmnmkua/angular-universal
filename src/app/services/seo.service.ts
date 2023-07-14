@@ -32,17 +32,17 @@ export class SeoService {
     this.meta.updateTag({ name: 'description', content: config.description });
 
     this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
-    this.meta.updateTag({ name: 'twitter:site', content: '@Strats_gg' });
+    this.meta.updateTag({ name: 'twitter:site', content: '@dmn1024' });
     this.meta.updateTag({ name: 'twitter:title', content: config.title });
     this.meta.updateTag({ name: 'twitter:description', content: config.description });
     this.meta.updateTag({ name: 'twitter:image', content: config.image });
 
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:site_name', content: 'Strats.gg' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'dmn1024' });
     this.meta.updateTag({ property: 'og:title', content: config.title });
     this.meta.updateTag({ property: 'og:description', content: config.description });
     this.meta.updateTag({ property: 'og:image', content: config.image });
-    this.meta.updateTag({ property: 'og:url', content: `https://strats.gg${config.slug}` });
+    this.meta.updateTag({ property: 'og:url', content: `https://test.gg${config.slug}` });
   }
 
   removeMetaTags() {
